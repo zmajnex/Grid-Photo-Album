@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <title>Grid Photo Album</title>
+</head>
+<body>
+    <div class="album">
+        <h1>Grid photo album</h1>
+        <div class="frame">
+            <div class="box1">
+                    <a href="img/city.jpeg" class="image-popup-no-margins" >
+                    <img src="img/city.jpeg" alt="Mountain View" class="gimg">
+                    </a>
+               <p>Slika 1</p>
+            </div>
+            <div class="box2">
+                    <a href="img/village.jpeg" class="image-popup-no-margins" >
+                    <img src="img/village.jpeg" alt="Mountain View" class="gimg">
+                    </a>
+                <p>Slika 2</p>
+            </div>
+            <div class="box3">
+                <a href="img/house.jpeg" class="image-popup-no-margins" >
+                    <img src="img/house.jpeg" alt="Mountain View" class="gimg">
+                </a>
+              <p>Slika 3</p>
+            </div>
+        
+        
+                <div class="box1">
+                        <a href="img/city.jpeg"class="image-popup-no-margins"  >
+                        <img src="img/city.jpeg" alt="Mountain View" class="gimg expand">
+                       </a>
+                   <p>Slika 1</p>
+                </div>
+                <div class="box2">
+                    <a href="img/village.jpeg" class="image-popup-no-margins">
+                        <img src="img/village.jpeg" alt="Mountain View" class="gimg ">
+                    </a>
+                    <p>Slika 2</p>
+                </div>
+               
+    </div>
+    </div>
+    
+</body>
+<!--Magnific popup-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script>
+    $('.image-popup-no-margins').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+
+
+</script>
+</html>
